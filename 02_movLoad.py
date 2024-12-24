@@ -20,6 +20,7 @@ while(mov01.isOpened()):
         cv2.imshow("mov01 frame", frame)
 
     if cv2.waitKey(1) & 0xFF == ord("q"): # 키보드 q 가 클릭되면 종료
+    #  waitKey 1로 설정-> 1 밀리초동안 이미지 1장(1프레임)을 표시하고 다음 프레임으로 이동
         break
 
 mov01.release()
