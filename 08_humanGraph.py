@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 print("분석 생성 시작!")
 # 동영상 불러오기
-mov01 = cv2.VideoCapture("mov/mov01.avi")  # 동영상 불러오기
+mov01 = cv2.VideoCapture("mov/mov02.avi")  # 동영상 불러오기
 mov01_width = mov01.get(cv2.CAP_PROP_FRAME_WIDTH)  # 동영상의 가로 크기 정보 불러오기
 mov01_height = mov01.get(cv2.CAP_PROP_FRAME_HEIGHT)  # 동영상의 세로 크기 정보 불러오기
 mov01_fps = mov01.get(cv2.CAP_PROP_FPS)  # 동영상의 프레임 정보 불러오기(FPS:초당 프레임 수)
@@ -58,6 +58,6 @@ plt.plot(data_df["time"], data_df["people"])
 plt.xlabel("time(sec)")
 plt.ylabel("population")
 plt.ylim(0,25)
-plt.savefig("img/mov01.png")
+plt.savefig("img/mov02.png")
 plt.show()
 
